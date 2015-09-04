@@ -1,0 +1,52 @@
+/*************************
+ * Sticky footer hack
+ * Source: http://pixelsvsbytes.com/blog/2011/09/sticky-css-footers-the-flexible-way/
+ ************************/
+
+
+/* Stretching all container's parents to full height */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav.floating-nav{
+    position: absolute;
+    z-index: 2;
+}
+
+/* Custom styles */
+nav .brand-logo{
+	padding-left: 20px;
+}
+
+.overflow-scroll{
+	overflow-y:auto;
+}
+
+
+.left-nav{
+    width: 20%;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    padding-top: 74px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.content-area{
+    width: 80%;
+    height: 100%;
+    left: 20%;
+    top: 0px;
+    position: absolute;
+    z-index: 1;
+    padding-top: 64px;
+}
